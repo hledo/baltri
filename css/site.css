@@ -1,8 +1,15 @@
+html, body {
+    cursor: url("../cursor.cur"), default;
+}
+
+
+/*url("https://assets.awwwards.com/awards/gallery/2017/10/supercursor.png")97 8, auto !important*/
+
 img{
 	width:100%;
 }
 a{
-  cursor:pointer;
+  cursor: url("../cursor.cur"), default;
 }
 
 #hoverpointer{
@@ -216,4 +223,25 @@ a{
 
 #lab_social_icon_footer #social-em:hover {
   color: #4049d0;
+}
+
+.page-title {
+  font-family: Arial, Helvetica!important;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.4em;
+  font-family: Share Tech Mono;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -1px;
+  text-transform: none;
+  line-height: 1em;
+  font-size: 45px;
+  text-align: center;
+  display: block;
+  margin: 0 auto 26px;
+}
+
+.nav-section {
+  margin-top: 70px;
 }
