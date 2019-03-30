@@ -1,0 +1,219 @@
+img{
+	width:100%;
+}
+a{
+  cursor:pointer;
+}
+
+#hoverpointer{
+  cursor:pointer;
+}
+
+#postloader{
+	width: 64px;
+	height: 64px;
+}
+
+.fade-in-out {
+  transition: 1s linear all;  
+  opacity: 1;
+}
+
+.fade-in-out.ng-hide {
+  opacity: 0;
+}
+
+
+.btn-label {
+  position: relative;
+  left: -12px;
+  display: inline-block;
+  padding: 6px 12px;
+  background: rgba(0,0,0,0.15);
+  border-radius: 3px 0 0 3px;
+}
+
+.btn-labeled {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.btn { 
+  margin-bottom:10px; 
+}
+
+
+.slide-down-enter,
+.slide-down-leave
+{
+    -webkit-transition:200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition:200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition:200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition:200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    transition:200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    display:block;
+    overflow:hidden;
+    position:relative;
+}
+
+.slide-down-enter.slide-down-enter-active,
+.slide-down-leave {
+    opacity:1;
+    height:46px;
+}
+
+.slide-down-leave.slide-down-leave-active,
+.slide-down-enter {
+    opacity:0;
+    height:0px;
+}
+
+
+.heading {
+  background-color:#357EBD;
+  color:#FFF;
+  margin-bottom:1em;
+  text-align:center;
+  line-height:2.5em;
+}
+.branding {
+  padding-bottom:2em;
+  border-bottom:1px solid #ddd;
+}
+
+@media print {
+    .noPrint {
+        display:none;
+    }
+}
+
+.btn span.glyphicon {         
+  opacity: 0;       
+}
+
+.btn.active span.glyphicon {        
+  opacity: 1;       
+}
+
+.right-items {
+  float: right!important;
+}
+
+.no-border-radius {
+  border-radius: 0px!important;
+  /*background-color: #B41E78!important;*/
+  margin-bottom: 0px!important;
+  /*border-color: #B41E78;*/
+}
+
+.nav-head {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600!important;
+  font-size: 18px;
+  color: white!important;
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+
+.nav-head:before {
+  background: black!important;
+}
+
+.nav-head:hover {
+  color: black!important;
+  background-color: #3c4fb7!important;
+}
+
+.right-items > li > a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: white!important;
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+  background: none!important;
+}
+
+.right-items > li > a:before{
+  background: black!important;
+}
+
+.right-items > li > a:hover{
+  color: black!important;
+  background-color: #3c4fb7!important;
+}
+
+.background-col{
+  background: url(../banner.jpg);
+  height: 110px;
+  max-width: 1693px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.container .text-muted {
+    margin: 20px 0;
+}
+
+.text-footer {
+    font-size: 14px!important;
+    color: white!important;
+    font-weight: 600;
+}
+
+#lab_social_icon_footer {
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+#lab_social_icon_footer a {
+  color: #3c4fb7;
+}
+
+#lab_social_icon_footer .social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+#lab_social_icon_footer .social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+  
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+#lab_social_icon_footer #social-fb:hover {
+  color: #4049d0;
+}
+
+#lab_social_icon_footer #social-tw:hover {
+  color: #4049d0;
+}
+
+#lab_social_icon_footer #social-gp:hover {
+  color: #4049d0;
+}
+
+#lab_social_icon_footer #social-em:hover {
+  color: #4049d0;
+}
