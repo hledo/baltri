@@ -290,6 +290,11 @@ a{
 .article-img {
   width: 240px;
   height: 220px;
+  transition: transform .25s ease;
+}
+
+.article-img:hover {
+  transform: scale(1.30);
 }
 
 .shop-items {
