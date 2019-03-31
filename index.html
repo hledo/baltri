@@ -32,12 +32,12 @@
       </div>
     </nav>
     <div class="container">
-      <div class="row" ng-if="section=='nosotros'">
+      <div class="row" ng-cloak ng-if="section=='nosotros'">
         <div class="col-lg-12">
           <div class="row nav-section">
             <div class="col-md-6">
               <h2 class="page-title">NOSOTROS</h2>
-              <img src="baltripc.png" style="width: 45%;margin-left: 150px;">
+              <img src="img/baltripc.png" style="width: 45%;margin-left: 150px;">
             </div>
             <div class="col-md-6">
               <h4 style="text-align: justify;margin-top: 68px;">
@@ -58,7 +58,7 @@
           </div>
         </div>
       </div>
-      <div class="row" ng-if="section=='jueguitos'">
+      <div class="row" ng-cloak ng-if="section=='jueguitos'">
         <div class="col-lg-12">
           <div class="row nav-section text-center">
             <h2 class="page-title" style="margin-left: 28px;">VAMO A JUGA</h2>
@@ -71,38 +71,48 @@
           </div>
         </div>
       </div>
-      <div class="row" ng-if="section=='baltriforo'">
+      <div class="row" ng-cloak ng-if="section=='baltriforo'">
         <div class="col-lg-12">
           <div class="row nav-section">
             
           </div>
         </div>
       </div>
-      <div class="row" ng-if="section=='blog'">
+      <div class="row" ng-cloak ng-if="section=='blog'">
         <div class="col-lg-12">
           <div class="row nav-section">
             
           </div>
         </div>
       </div>
-      <div class="row" ng-if="section=='tienda'">
+      <div class="row" ng-cloak ng-if="section=='tienda'">
         <div class="col-lg-12">
-          <div class="row nav-section">
+          <div class="row store-section">
             <h2 class="page-title" style="margin-left: 28px;">DUARTE CON BALTRÍ</h2>
             <h4 style="text-align: center;margin-left: 28px;">Tienda Oficial</h4>
             <hr style="border-top: 1px solid #555;"/>
-
+            <div class="row" style="margin-bottom: 30px;">
+              <div class="col-md-3 text-center" ng-repeat="art in articles">
+                <div class="shop-items">
+                  <h4 ng-bind="art.name"></h4>
+                  <br/>
+                  <img ng-src="{{art.picture}}" class="article-img">
+                </div>
+                
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
-      <div class="row" ng-if="section=='provincia'">
+      <div class="row" ng-cloak ng-if="section=='provincia'">
         <div class="col-lg-12">
           <div class="row nav-section">
             
           </div>
         </div>
       </div>
-      <div class="row" ng-if="section=='contacto'">
+      <div class="row" ng-cloak ng-if="section=='contacto'">
         <div class="col-lg-12">
           <div class="row nav-section">
             
@@ -110,7 +120,7 @@
         </div>
       </div>
     </div>
-    <footer class="footer no-border-radius">
+    <footer class="footer no-border-radius" style="margin-top:70px;">
       <div class="container">
         <p class="text-center text-muted text-footer">&copy; 2019&nbsp;&nbsp; Baltrí. Todos los derechos reservados.</p>
 
